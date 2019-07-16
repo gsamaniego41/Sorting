@@ -41,12 +41,13 @@ selection_arr = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
 
 
 def bubble_sort(arr):
-    for i in range(len(arr) - 1, 0, -1):
-        print(arr)
+    for i in range(len(arr), 0, -1):
+        # print(arr)
         for j in range(0, i - 1):
             next_index = j + 1
             if arr[j] > arr[next_index]:
                 swap(arr, j, next_index)
+    print(arr)
     return arr
 
 
